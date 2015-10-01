@@ -1,0 +1,46 @@
+{
+  "name": "ohflux",
+  "version": "0.0.1",
+  "description": "An observable flux architecture.",
+  "main": "index.js",
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "files": [
+    "index.js",
+    "connect.js",
+    "createAction.js",
+    "createActions.js",
+    "createConstants.js",
+    "createStore.js",
+    "core"
+  ],
+  "scripts": {
+    "compile": "babel --stage 0 --out-dir ./ src",
+    "test": "npm run compile && babel-tape-runner test/**/*.js | tap-bail | tap-difflet",
+    "watch": "watch 'npm test' src test",
+    "prepublish": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/f5io/ohflux.git"
+  },
+  "author": "Joe Harlow",
+  "license": "MIT",
+  "dependencies": {
+    "fnutil": "^0.2.5"
+  },
+  "devDependencies": {
+    "babel": "^5.5.6",
+    "babel-runtime": "^5.5.6",
+    "babel-tape-runner": "^1.2.0",
+    "tap-bail": "0.0.0",
+    "tap-difflet": "^0.3.0",
+    "tape": "^4.2.0",
+    "watch": "^0.16.0"
+  },
+  "bugs": {
+    "url": "https://github.com/f5io/ohflux/issues"
+  },
+  "homepage": "https://github.com/f5io/ohflux#readme"
+}
