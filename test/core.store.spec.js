@@ -6,9 +6,7 @@ import {
   getStoreActions, inheritStreamProto,
   mergeStreams, plugOnValue, updateState
 } from '../core/store';
-
 import { createAction } from '../';
-
 import { of } from 'fnutil/observable';
 
 test('[core.store] actionsToStreams', t => {

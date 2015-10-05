@@ -1,6 +1,7 @@
 import createAction from '../../createAction';
 import { actionName } from '../utils/symbols';
-import { concat, uniq } from 'fnutil/utils';
+import { toSentenceCase } from '../utils';
+import { concat, uniq, compose } from 'fnutil/utils';
 
 const DEFAULT_ASYNC_HANDLERS = [ 'completed', 'failed' ];
 

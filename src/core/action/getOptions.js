@@ -7,12 +7,6 @@ import DEFAULTS from './defaults';
 let assignName = name => opts => ({ ...opts, [actionName]: name });
 let mergeOptions = curry((defaults, supplied) => ({ ...defaults, ...supplied }));
 
-let logThrough = val => x => {
-  console.log(val);
-  console.log(x);
-  return x;
-}
-
 let getOptions = (name) => compose(
   assignName(name),
   mergeOptions(DEFAULTS),

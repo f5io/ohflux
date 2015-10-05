@@ -7,13 +7,6 @@ import reducePoolToStream from './reducePoolToStream';
 import { compose, filterSplit } from 'fnutil/utils';
 import { observable } from 'fnutil';
 
-
-let logThrough = val => x => {
-  console.log(val);
-  console.log(x);
-  return x;
-}
-
 let createStream = compose(
   handleAsyncAction,
   decorateAction,
