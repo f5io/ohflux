@@ -1,6 +1,6 @@
 {
   "name": "ohflux",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "An observable flux architecture.",
   "main": "index.js",
   "engines": {
@@ -29,7 +29,7 @@
   "license": "MIT",
   "dependencies": {
     "babel-runtime": "^5.5.6",
-    "fnutil": "^0.2.5"
+    "fnutil": "^0.2.6"
   },
   "devDependencies": {
     "babel": "^5.5.6",
