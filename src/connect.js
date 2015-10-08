@@ -2,7 +2,8 @@ export default function connect(Store, modifier = x => x) {
   return {
     getInitialState() {
       let state;
-      modifier(Store).onValue(s => state = s);
+      let fn = s => state = s;
+      modifier(Store).onValue(fn).offValue(fn);
       return state;
     },
     componentDidMount() {
